@@ -7,16 +7,22 @@ for x in range(number1,number2):
         print (x)
 #2
 
-with open('C:\\Users\\opilane\\Downloads\\kttekst.txt',"r") as f:
+with open('C:\\Users\\SIIM\\Downloads\\kttekst.txt',"r") as f:
+    words1=[]
+    words3=[]
     for line in f:
-        
-        words=line.split()
-        print (words)
-#f=open('C:\\Users\\opilane\\Downloads\\kttekst.txt', 'r')
-#while f.read():
-    #myList=list(f)
-   # wordCount=len(myList)
-   # print (wordCount)
+        line.rstrip()
+        words2=line.split()
+        for word in words2:
+            words1.append(word)
+            words1.sort()
+            sona=(int(len(word)))
+            if sona<5:
+                words3.append(sona)
+    print (len(words1))
+    print (len(words3))
+
+
 #3
 
 list1=[11 ,15 ,6, 13 ,13 ,25, 32 ,11 ,20, 5, 31 ,16 ,32, 29 ,11, 13,3 ,29, 28, 24]
